@@ -1,0 +1,18 @@
+.hboxStyle {
+    -fx-padding: 10;
+}
+
+.playButton{
+    -fx-font: 22 Impact;
+     -fx-base: #b6e7c9;
+}
+
+.tableauScore{
+    /*-fx-background-color: LightGrey;*/
+}
+
+.TitreColScore{
+    -fx-font: 22 Impact;
+     -fx-base: Black;
+     -fx-stroke : White;
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="fenetrejeu"
+            xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="view.FenetreJeu"
+            stylesheets="@style/StyleFenetreJeu.css">
+   <children>
+      <TextField fx:id="controledep" onKeyPressed="#handleKeyPressed" />
+   </children>
+
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/volcan.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fx:id="dino_view" fitHeight="100" fitWidth="100">
+         <image>
+            <Image url="@../media/dino_001.png" />
+         </image>
+      </ImageView>
+   </children>
+   <children>
+      <HBox fx:id="pdvBox" layoutX="1100" layoutY="10" styleClass="hboxStyle">
+         <Text fx:id="pointVie" styleClass="contour" />
+         <ImageView fitHeight="25" fitWidth="25" >
+            <image>
+               <Image url="@../media/coeur.png" />
+            </image>
+         </ImageView>
+      </HBox>
+   </children>
+   <children>
+      <HBox  layoutX="38.0" layoutY="27.0">
+         <Label text="Nombre de pets : " textFill="WHITE">
+            <font>
+               <Font name="Impact" size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="nb_de_pets" textFill="WHITE">
+            <font>
+               <Font name="Impact" size="20.0" />
+            </font>
+         </Label>
+
+      </HBox>
+
+
+   </children>
+
+
+</AnchorPane>
